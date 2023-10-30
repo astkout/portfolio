@@ -129,6 +129,9 @@
     }
   }
   
-  .hamburger-icon, .close-icon {
-    display: none;
+  @media (max-width: 768px) {
   }
+  
+  @media (min-width: 769px) {
+  }
+  
