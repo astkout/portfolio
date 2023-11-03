@@ -3,11 +3,10 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { MapContainer, TileLayer, Marker ,Popup } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css';
-import markerIconPng from "leaflet/dist/images/marker-icon.png"
-import {Icon} from 'leaflet'
-
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
+import markerIconPng from 'leaflet/dist/images/marker-icon.png'
+import { Icon } from 'leaflet'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -31,7 +30,7 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert('Message successfully sent!')
+          alert('Message successfully sent. Check your spam/junk folder for replies.')
         },
         () => {
           alert('Failed to send the message, please try again.')
@@ -60,12 +59,15 @@ const Contact = () => {
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
+                  <input 
+                  type="text" 
+                  name="from_name" 
+                  placeholder="Name" required />
                 </li>
                 <li className="half">
                   <input
                     type="email"
-                    name="email"
+                    name="email_id"
                     placeholder="Email"
                     required
                   />
@@ -100,20 +102,31 @@ const Contact = () => {
           <span>astkout12@hotmail.com</span>
         </div>
         <div className="map-wrap">
-        <div className="leaflet-container">
-          <MapContainer className="leaflet-container" center={[53.79648 ,-1.54785]} zoom={15} scrollWheelZoom={true}>
-    <TileLayer
-      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
-    <Marker position={[53.79648 ,-1.54785]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})} >
-      <Popup>
-        I ain't quite there but...nearby :)
-      </Popup>
-    </Marker>
-  </MapContainer>
-
-        </div>
+          <div className="leaflet-container">
+            <MapContainer
+              className="leaflet-container"
+              center={[53.79648, -1.54785]}
+              zoom={15}
+              scrollWheelZoom={true}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker
+                position={[53.79648, -1.54785]}
+                icon={
+                  new Icon({
+                    iconUrl: markerIconPng,
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                  })
+                }
+              >
+                <Popup>I ain't quite there but...nearby :)</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />

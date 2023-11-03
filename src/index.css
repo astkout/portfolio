@@ -13,3 +13,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Default style for screens wider than 768px */
+body {
+  font-size: 16px;
+}
+
+/* Media query for screens up to 768px wide */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for screens up to 480px wide */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Adjust font size for even smaller screens */
+  }
+}
