@@ -47,7 +47,15 @@ img {
 }
 
 .about-page,
-.contact-page {
+.contact-page,
+.project-page {
+  opacity: 1;
+  transition: opacity 1s fadeIn;
+}
+
+.project-page.fade-in {
+  opacity: 1;
+}
   .text-zone {
     position: absolute;
     left: 10%;
@@ -119,7 +127,7 @@ img {
       }
     }
   }
-}
+
 
 @media (max-width: 768px) {
 }
