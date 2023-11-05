@@ -49,22 +49,22 @@ const About = () => {
       <div className="stage-cube-cont">
         <div className="cubespinner">
           <div className="face1">
-            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+            <FontAwesomeIcon icon={faHtml5} style={{ fontSize: '2em', color: '#F06529' }}/>
           </div>
           <div className="face2">
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            <FontAwesomeIcon icon={faCss3} style={{ fontSize: '2em', color: '#28A4D9' }}/>
           </div>
           <div className="face3">
-            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            <FontAwesomeIcon icon={faJsSquare} style={{ fontSize: '2em', color: '#EFD81D' }} />
           </div>
           <div className="face4">
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            <FontAwesomeIcon icon={faReact} style={{ fontSize: '2em', color: '#5ED4F4' }}/>
           </div>
           <div className="face5">
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            <FontAwesomeIcon icon={faGitAlt} style={{ fontSize: '2em', color: '#EC4D28' }}/>
           </div>
           <div className="face6">
-            <FontAwesomeIcon icon={faNodeJs} color="#3C873A" />
+            <FontAwesomeIcon icon={faNodeJs} style={{ fontSize: '2em', color: '#3C873A' }}/>
           </div>
         </div>
       </div>
