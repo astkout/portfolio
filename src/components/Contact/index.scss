@@ -56,7 +56,8 @@ textarea {
   padding: 20px;
   min-height: 150px;
   box-sizing: border-box;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
+  resize: none;
 }
 
 .flat-button {
@@ -112,4 +113,5 @@ textarea {
   position: static;
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
+  border-radius: 10px;
 }
