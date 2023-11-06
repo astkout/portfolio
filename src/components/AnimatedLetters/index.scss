@@ -1,10 +1,9 @@
 .text-animate {
-    display: inline-block;
-    opacity: 0;
-    animation: bounceIn 1.3s forwards;
-    min-width: 10px;
-  }
-  
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1.3s forwards;
+  min-width: 10px;
+}
 
 .text-animate-hover {
   min-width: 10px;
@@ -16,15 +15,9 @@
     color: #ffd700;
   }
 }
-  
-@for $i from 1 through 100 {
+
+@for $i from 1 through 60 {
   .text-animate._#{$i} {
-    animation-delay: #{$i / 10}s;
+    animation-delay: calc(#{$i} * 0.08s);
   }
-}
-
-@media (max-width: 768px) {
-}
-
-@media (min-width: 769px) {
 }

@@ -48,6 +48,7 @@ h2{
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
+    margin-top: 10%;
 }
 
 .flat-button {
@@ -60,11 +61,12 @@ h2{
     padding: 10px 10px;
     border: 1px solid #ffd700;
     margin-top: 25px;
-    float: left;
     animation: fadeIn 1s 1.8s backwards;
+    margin-left: -160%;
 
     &:hover{
         background-color: #ffd700;
         color: #333;
     }
 }
+

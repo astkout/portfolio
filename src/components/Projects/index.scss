@@ -75,6 +75,13 @@
   color: #ffd700;
 }
 
+.text-animate-hover-projects {
+  &:hover {
+      color: #fff;
+  }
+}
+
+
 @media only screen and (max-width: 1300px) {
   .projectList {
     grid-template-columns: 1fr 1fr;
