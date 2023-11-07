@@ -69,10 +69,15 @@ textarea {
   padding: 8px 10px;
   border: 1px solid #ffd700;
   position: relative;
-  border-radius: 4px;
-  left: 85%;
+  border-radius: 5px;
+  left: 87%;
   animation: fadeIn 2s 0s;
   animation-fill-mode: forwards;
+
+  &:hover {
+    background-color: #ffd700;
+    color: #333;
+}
 }
 
 .info-map {

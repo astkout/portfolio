@@ -45,27 +45,24 @@ h2{
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
     margin-top: 10%;
 }
 
-.flat-button {
+.flat-buttona {
     color: #ffd700;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     letter-spacing: 14px;
     font-family: sans-serif;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 7px 7px;
     border: 1px solid #ffd700;
-    margin-top: 25px;
     animation: fadeIn 1.2s 2s backwards !important;
     position: absolute;
-    margin-top: 25px;
-    margin-left: -475px !important;
 
     &:hover {
         background-color: #ffd700;
