@@ -2,10 +2,11 @@
   position: fixed;
   left: 50%;
   top: 0;
-  width: 90%;
+  width: 120%;
+  height: 120%;
   z-index: -999;
   opacity: 0; 
-  animation: fade-in 2s 2s forwards;
+  animation: fade-in 2s forwards;
 }
 
 @keyframes fade-in {
@@ -38,11 +39,5 @@ svg g {
   }
   100% {
     stroke-dashoffset: 0;
-  }
-}
-
-@keyframes fill-in {
-  to {
-    fill-opacity: 0.3;
   }
 }
