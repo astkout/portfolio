@@ -53,20 +53,21 @@ h2{
 }
 
 .flat-buttona {
-    color: #ffd700;
+    color: #08334b;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 14px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 7px 7px;
-    border: 1px solid #ffd700;
+    background-color: #e8c91e;
+    border: 1px solid #e8c91e;
     animation: fadeIn 1.2s 2s backwards !important;
     position: absolute;
-
+    
     &:hover {
-        background-color: #ffd700;
-        color: #333;
+        background-color: #08334b;
+        color: #e8c91e;
     }
 }
 
