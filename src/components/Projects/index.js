@@ -14,7 +14,7 @@ const Projects = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover text-animate-hover-projects');
-    }, 3000);
+    }, 5000);
   }, []);
 
   return (

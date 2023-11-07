@@ -17,8 +17,7 @@ const Logo = () => {
           transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
           fill="none"
           stroke="#ffd700"
-          stroke-width="30"
-          fill-opacity="0.1"
+          stroke-width="20"
         >
           <path
             d="M172 4811 c-60 -21 -113 -67 -145 -126 l-22 -40 0 -2085 0 -2085 22

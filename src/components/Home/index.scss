@@ -9,6 +9,7 @@
         max-height: 90%;
     }
 
+
     h1 {
         color: #fff;
         font-size: 50px;
@@ -61,12 +62,17 @@ h2{
     padding: 10px 10px;
     border: 1px solid #ffd700;
     margin-top: 25px;
-    animation: fadeIn 1s 1.8s backwards;
-    margin-left: -160%;
+    animation: fadeIn 1.2s 2s backwards !important;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -475px !important;
 
-    &:hover{
+    &:hover {
         background-color: #ffd700;
         color: #333;
     }
 }
+
+
+
 
