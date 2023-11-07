@@ -43,7 +43,8 @@ input[type='email'] {
   color: #0a4464;
   padding: 0 20px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 5px ;
+  outline: none;
 }
 
 textarea {
@@ -56,8 +57,9 @@ textarea {
   padding: 20px;
   min-height: 150px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 5px;
   resize: none;
+  outline: none;
 }
 
 .flat-button {
