@@ -33,6 +33,7 @@ const Projects = () => {
             <ProjectItem name="Tindog" image={tindog} link="https://tindog-pffl-astkout.vercel.app/"/>
             <ProjectItem name="Drumkit" image={drumkit} link="https://drum-kit-nine-liard.vercel.app/"/>
             <ProjectItem name="Simon Says" image={simon} link="https://simonsays-hazel.vercel.app/"/>
+            <ProjectItem name="Keeper" image={keeper} link="https://keeper-git-main-astkout.vercel.app/"/>
           </div>
         </div>
       </div>
